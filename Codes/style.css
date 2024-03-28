@@ -1,0 +1,60 @@
+table, th, td{
+    border: 1px none black;
+    width: 100%;
+}
+.menu{
+    text-align: center;
+    background-color: #d7f4ff;
+    padding: 5px;
+}
+button{
+    width: 20vh;
+    color: 	black;
+    background-color: #d7f4ff;
+    border-radius: 12px;
+    border-width: 5px;
+}
+
+button:hover{
+    color: whitesmoke;
+    background-color: #32CD32 ;
+    cursor: pointer
+}
+a{
+    text-decoration: none;
+}
+
+.heading{
+    font-size: 18px;
+    color: aliceblue;
+    background-color:   #26374b;
+}
+footer{
+    /* Ensure the gradient covers the entire viewport */
+
+    /* Set the background gradient */
+    background: linear-gradient(to left, #32CD32, #d98310); /* Adjust colors as needed */
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    /* Specify the background size and repeat */
+    background-size: 200% 100%; 
+    background-repeat: repeat;
+    /* Create the animation to move the gradient */
+    animation: moveGradient 5s alternate infinite;
+}
+footer div{
+    color: whitesmoke;
+    text-shadow: 2px 1px black;
+    margin-left: 5vh;
+    animation: moveGradient 5s alternate infinite;
+}
+
+/* Define the animation */
+@keyframes moveGradient {
+    0% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
